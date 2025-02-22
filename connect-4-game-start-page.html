@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Connect 4 Game</title>
+
+    <link rel="stylesheet" href="connect-4-game-start-page.css" />
+    <script src="connect-4-game-start-page.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/eb21966e98.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="start-page">
+      <h1>Connect 4 Game</h1>
+      <div class="center-content">
+        <button id="start-game-btn">
+          Start Now <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+    </div>
+
+    <div class="choose-section" id="choose-section">
+      <h1>Choose who want make the first move</h1>
+      <div class="choose-color">
+        <div id="choose-red"></div>
+        <div id="choose-green"></div>
+      </div>
+    </div>
+
+    <div id="game-section">
+      <h2 id="current-play"></h2>
+      <div id="game">
+        <div>
+          <div id="red-coins"></div>
+          <div id="red-won">
+            <h1>Congratulations Red! You won the match</h1>
+          </div>
+          <div id="red-loss">
+            <h1>Don't worry Red! You can won the next match</h1>
+          </div>
+          <div>
+            <button id="play-again-red-btn">Play Again</button>
+          </div>
+        </div>
+        <div id="board">
+          <!-- <div id="0.0" <--(row.column) class="tile"></div> -->
+        </div>
+        <div>
+          <div id="green-coins"></div>
+          <div id="green-won">
+            <h1>Congratulations Green! You won the match</h1>
+          </div>
+          <div id="green-loss">
+            <h1>Don't worry Green! You can won the next match</h1>
+          </div>
+          <div>
+            <button id="play-again-green-btn">Play Again</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
